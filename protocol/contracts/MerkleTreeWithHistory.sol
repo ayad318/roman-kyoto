@@ -84,9 +84,6 @@ contract MerkleTreeWithHistory {
         bytes32[2] memory input;
         input[0] = _left;
         input[1] = _right;
-        console.logBytes32(input[0]);
-        console.logBytes32(input[1]);
-        console.logAddress(address(hasher));
         return hasher.poseidon(input);
     }
 
@@ -102,7 +99,6 @@ contract MerkleTreeWithHistory {
         );
         uint32 currentIndex = _nextIndex / 2;
         bytes32 currentLevelHash = hashLeftRight(_leaf1, _leaf2);
-        console.log("yes");
         bytes32 left;
         bytes32 right;
 
