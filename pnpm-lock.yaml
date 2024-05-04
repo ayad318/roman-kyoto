@@ -135,6 +135,9 @@ importers:
       '@chainlink/contracts-ccip':
         specifier: ^1.4.0
         version: 1.4.0(ethers@6.11.1)
+      '@metamask/eth-sig-util':
+        specifier: ^7.0.2
+        version: 7.0.2
       '@noble/curves':
         specifier: ^1.4.0
         version: 1.4.0

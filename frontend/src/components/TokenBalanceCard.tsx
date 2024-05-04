@@ -12,6 +12,7 @@ import {
 export default function TokenBalanceCard(props: {
     symbol: string;
     balance: number;
+    shieldedBalance: number;
     icon: string;
 }): JSX.Element {
     return (
@@ -30,7 +31,7 @@ export default function TokenBalanceCard(props: {
                 </CardHeader>
 
                 <Text> Unshielded Balance: {props.balance}</Text>
-                <Text> Shielded Balance: TODO</Text>
+                <Text> Shielded Balance: {props.shieldedBalance}</Text>
             </VStack>
         </Card>
     );
